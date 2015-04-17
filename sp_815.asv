@@ -1,0 +1,21 @@
+%-------------------------------------------------------------------------%
+%   Name: Suhail P.         Take Home Quiz1              Date: 3-24-15    %
+%-------------------------------------------------------------------------%
+
+%8.15
+
+P = input('Please enter an integer: ');
+N = 3;
+R = P/N;
+
+while R ~= 0 && N <(sqrt(P)) 
+        N = 2*N;
+        R = P/N;
+end
+        if R ~= 0
+            fprintf('this is prime');
+        else
+            f = factor(P);
+            prod(f)
+            disp(f);
+        end

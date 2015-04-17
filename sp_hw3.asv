@@ -1,0 +1,76 @@
+
+%4.1a
+
+% clc
+% clear all
+% 
+% default = 'y';
+% while default == 'y'
+%     
+%     A = input('Please input value for A: ');
+%     B = input('Please input value for B: ');
+%     
+%     C = sqrt((A)^2 + (B)^2);
+%     fprintf('The length of the hypotenuse is: %5.2f',C);
+%     
+%     default = input('\nPress y to re-run the program OR n to exit: ','s');
+%     if default == 'n'
+%         disp('Program has been terminated.');
+%     end
+%     
+% end
+% 
+
+%4.7
+
+clc
+clear all
+
+Initial = 100;
+Price = input('Enter Cost of Product less than $100.00: ');
+Change = (Initial - Price);
+Fitty = fix(Change/50);
+Change_1 = rem(Change,50);
+
+Zwanzig = fix(Change_1/20);
+Change_2 = rem(Change_1,20);
+
+Zehn = fix(Change_2/10);
+Change_3 = rem(Change_2,10);
+
+Funf = fix(Change_3/5);
+Change_4 = rem(Change_3,5);
+
+Ein = fix(Change_4/1);
+Change_5 = rem(Change_4,1);
+
+Quarter = fix(Change_5/0.25);
+Change_6 = rem(Change_5,0.25);
+
+Dime = fix(Change_6/0.10);
+Change_7 = rem(Change_6,0.10);
+
+Nickel = fix(Change_7/0.05);
+Change_8 = rem(Change_7,0.05);
+
+Penny = fix(Change_8/0.01);
+Change_9 = rem(Change_8,0.01);
+
+fprintf('$50 Bill(s): ')
+disp(Fitty)
+fprintf('$20 Bill(s): ')
+disp(Zwanzig)
+fprintf('$10 Bill(s): ')
+disp(Zehn)
+fprintf('$5 Bill(s): ')
+disp(Funf)
+fprintf('$1 Bill(s): ')
+disp(Ein)
+fprintf('Quarter(s): ')
+disp(Quarter)
+fprintf('Dime(s): ')
+disp(Dime)
+fprintf('Nickel(s): ')
+disp(Nickel)
+fprintf('Penn-y(ies): ')
+disp(Penny)
